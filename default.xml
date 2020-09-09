@@ -826,4 +826,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <include name="labs/remove.xml" />
+  <include name="labs/franken.xml" />
+
 </manifest>

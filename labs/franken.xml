@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="frank"
+           fetch="https://github.com/FrankenRom11"
+           revision="refs/heads/fr-11" />
+
+  <!-- General -->
+  <project path="art" name="art" remote="frank" />
+  <project path="bionic" name="bionic" remote="frank" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="frank" />
+  <project path="development" name="development" remote="frank" />
+  <project path="manifest" name="FrankenRom11/manifest" remote="github" revision="frank" />
+  <project path="platform_testing" name="platform_testing" remote="frank" />
+
+  <!-- Build -->
+  <project path="build/blueprint" name="build_blueprint" remote="frank" />
+  <project path="build/make" name="build_make" remote="frank" >
+   <copyfile src="core/root.mk" dest="Makefile" />
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="frank" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="frank" /> -->
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="frank" revision="eleven-legacy-um" />
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="frank" />
+  <project path="external/guice" name="external_guice" remote="frank" />
+  <project path="external/json-c" name="external_json-c" remote="frank" />
+  <project path="external/selinux" name="external_selinux" remote="frank" />
+  <project path="external/skia" name="external_skia" remote="frank" />
+  <project path="external/sqlite" name="external_sqlite" remote="frank" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="frank" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="frank" />
+  <project path="frameworks/base" name="frameworks_base" remote="frank" />
+  <project path="frameworks/native" name="frameworks_native" remote="frank" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="frank" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="frank" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="frank" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="frank" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="frank" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="frank" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="frank" />
+  <project path="hardware/qcom/camera" name="hardware_qcom_camera" remote="frank" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="hardware_qcom_data_ipacfg-mgr" remote="frank" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="frank" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="frank" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="frank" />
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="frank" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="frank" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="frank" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="frank" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="frank" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="frank" />
+  <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="frank" />
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="frank" />
+  <project path="packages/apps/CertInstaller" name="packages_apps_CertInstaller" remote="frank" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="frank" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="frank" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="frank" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="frank" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="frank" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="frank" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="frank" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="frank" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="frank" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="frank" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="frank" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="frank" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"
+    name="prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="frank" />
+
+  <!-- System -->
+  <project path="system/bt" name="system_bt" remote="frank" />
+  <project path="system/core" name="system_core" remote="frank" />
+  <project path="system/extras" name="system_extras" remote="frank" />
+  <project path="system/incremental_delivery" name="system_incremental_delivery" remote="frank" />
+  <project path="system/keymaster" name="system_keymaster" remote="frank" />
+  <project path="system/netd" name="system_netd" remote="frank" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="frank" />
+  <project path="system/vold" name="system_vold" remote="frank" />
+
+  <project path="tools/metalava" name="tools_metalava" remote="frank" />
+
+  <project path="vendor/franken" name="vendor_franken" remote="frank" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="frank" />
+
+</manifest>
