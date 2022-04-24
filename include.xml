@@ -15,7 +15,7 @@
           fetch="https://gitlab.com/" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="statix" groups="pdk" >
+<!--  <project path="build/make" name="android_build" remote="statix" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -27,7 +27,7 @@
   <project path="build/soong" name="android_build_soong" remote="statix" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  </project> -->
 
   <!-- Device -->
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
@@ -43,7 +43,7 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="statix" />
+<!--  <project path="frameworks/base" name="android_frameworks_base" remote="statix" /> -->
   <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
 
   <!-- Hardware -->
@@ -52,14 +52,14 @@
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+<!--  <project path="manifest" name="android_manifest" remote="statix" /> -->
 
   <!-- Packages -->
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" />
+<!--  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" /> -->
   <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="statix" />
   <project path="packages/apps/StatiXOSWalls" name="android_packages_apps_StatiXOSWalls" remote="statix" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix" />
+<!--  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix" /> -->
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix" />
 
   <!-- Platform Testing -->
@@ -80,9 +80,13 @@
   <!-- Vendor -->
   <project path="vendor/gms" name="StatiXOS/android_vendor_google_gms" revision="sc-v2" remote="gitlab" />
   <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="statix" />
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix">
+<!--  <project path="vendor/statix" name="android_vendor_statix" remote="statix">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
-  </project>
+  </project> -->
   <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix" />
   <project path="vendor/support" name="android_vendor_support" remote="statix" />
+
+  <!-- Include Crooked repos -->
+  <include name="crooked.xml" />
+
 </manifest>
