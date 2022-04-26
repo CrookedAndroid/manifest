@@ -23,6 +23,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="ca" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ca" />
 
   <!-- Manifest -->
   <project path="manifest" name="manifest" remote="ca" />
