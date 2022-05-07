@@ -88,5 +88,7 @@
 
   <!-- Include Crooked repos -->
   <include name="crooked.xml" />
+  <!-- Include Lineage repos -->
+  <include name="los.xml" />
 
 </manifest>

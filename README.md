@@ -18,3 +18,4 @@ Build Source:
 . build/envsetup.sh
 lunch crooked_devicename-user (device codename)
 brunch crooked_devicename-user
+

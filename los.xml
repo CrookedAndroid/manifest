@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Lineage -->
+  <remote  name="los"
+           revision="lineage-19.1"
+           fetch="https://github.com/LineageOS/" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="los" />
+  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" remote="los" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom/sm8150/media" name="android_hardware_qcom_sm8150_media" remote="los" />
+
+</manifest>

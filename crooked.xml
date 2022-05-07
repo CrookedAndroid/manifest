@@ -42,4 +42,7 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
 
+  <!-- Hardware --> 
+  <project path="hardware/qcom/sm8150/display" name="android_hardware_qcom_sm8150_display" remote="ca" />
+  <project path="hardware/qcom/sm8150/data/ipacfg-mgr/" name="android_hardware_qcom_sm8150_data_ipacfg-mgr" remote="ca" />
 </manifest>
