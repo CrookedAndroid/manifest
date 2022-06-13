@@ -9,13 +9,18 @@ Initialize Source:
 mkdir crooked (or whatever you want to name the source folder)
 
 cd ~/crooked
+
 repo init -u https://github.com/CrookedAndroid/manifest.git -b cr1
+
 Sync Source:
 
 repo sync -c -j16 --force-sync --no-clone-bundle --no-tags
+
 Build Source:
 
 . build/envsetup.sh
+
 lunch crooked_devicename-user (device codename)
+
 brunch crooked_devicename-user
 
