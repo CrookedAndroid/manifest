@@ -41,6 +41,7 @@
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ca" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ca" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" />
   
   <!-- System -->
   <project path="system/update_engine" name="system_update_engine" remote="ca" />
