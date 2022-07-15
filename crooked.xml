@@ -43,6 +43,10 @@
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ca" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" />
   
+  <!-- Other Packages -->
+  <remove-project name="android_packages_apps_StatiXOSWalls" />
+  <project path="packages/apps/StatiXOSWalls" name="packages_apps_StatiXOSWalls" remote="ca" />
+
   <!-- System -->
   <project path="system/update_engine" name="system_update_engine" remote="ca" />
 
