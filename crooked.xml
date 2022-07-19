@@ -30,6 +30,7 @@
   </project>
 
   <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="ca" />
   <project path="frameworks/base" name="frameworks_base" remote="ca" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ca" />
 
