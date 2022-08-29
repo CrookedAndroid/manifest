@@ -1170,4 +1170,6 @@
   <!-- Crooked Additions -->
   <include name="remove.xml" />
   <include name="crooked.xml" />
+  <include name="statix.xml" />
+
 </manifest>
