@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-20.0" />
+
+  <!-- External -->
+  <project path="external/json-c" name="android_external_json-c" remote="los" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom/sm8150/media" name="android_hardware_qcom_sm8150_media" remote="los" />
+
+</manifest>

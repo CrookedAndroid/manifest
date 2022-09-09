@@ -32,6 +32,9 @@
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="ca" />
 
+  <!-- Hardware -->
+  <project path="hardware/qcom/sm8150/display" name="hardware_qcom_sm8150_display" remote="ca" />
+
   <!-- Manifest -->
   <project path="manifest" name="manifest" remote="ca" />
 
