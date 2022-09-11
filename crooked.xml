@@ -33,6 +33,8 @@
   <project path="frameworks/base" name="frameworks_base" remote="ca" />
 
   <!-- Hardware -->
+  <project path="hardware/qcom/sdm845/display" name="hardware_qcom_sdm845_display" remote="ca" />
+  <project path="hardware/qcom/sdm845/media" name="hardware_qcom_sdm845_media" remote="ca" />
   <project path="hardware/qcom/sm8150/display" name="hardware_qcom_sm8150_display" remote="ca" />
 
   <!-- Manifest -->
