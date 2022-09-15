@@ -47,4 +47,6 @@
   <project path="vendor/crooked" name="vendor_crooked" remote="ca">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ca" />
+
 </manifest>
