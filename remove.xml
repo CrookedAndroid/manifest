@@ -82,5 +82,6 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- System -->
+  <remove-project name="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
 </manifest>
