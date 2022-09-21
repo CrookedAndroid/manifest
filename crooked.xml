@@ -14,6 +14,9 @@
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="ca" />
+
   <!-- Build -->
   <project path="build/make" name="build_make" remote="ca" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -42,6 +45,9 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
+
+  <!-- System --> 
+  <project path="system/core" name="system_core" remote="ca" />
 
   <!-- Vendor -->
   <project path="vendor/crooked" name="vendor_crooked" remote="ca">

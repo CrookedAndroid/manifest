@@ -7,6 +7,8 @@
 
   <!-- External -->
   <project path="external/json-c" name="android_external_json-c" remote="los" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="los" />
+  <project path="external/mksh" name="android_external_mksh" remote="los" />
 
   <!-- Hardware -->
   <project path="hardware/qcom/sm8150/media" name="android_hardware_qcom_sm8150_media" remote="los" />
