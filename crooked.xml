@@ -48,6 +48,7 @@
 
   <!-- System --> 
   <project path="system/core" name="system_core" remote="ca" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="ca" />
 
   <!-- Vendor -->
   <project path="vendor/crooked" name="vendor_crooked" remote="ca">
