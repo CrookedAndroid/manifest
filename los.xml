@@ -13,4 +13,7 @@
   <!-- Hardware -->
   <project path="hardware/qcom/sm8150/media" name="android_hardware_qcom_sm8150_media" remote="los" />
 
+  <!-- System -->
+  <project path="system/update_engine" name="android_system_update_engine" remote="los" />
+
 </manifest>
