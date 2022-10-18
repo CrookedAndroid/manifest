@@ -6,6 +6,8 @@
            revision="lineage-20.0" />
 
   <!-- External -->
+  <project path="external/android-nn-driver" name="android_external_android-nn-driver" remote="los" />
+  <project path="external/armnn" name="android_external_armnn" remote="los" />
   <project path="external/json-c" name="android_external_json-c" remote="los" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="los" />
   <project path="external/mksh" name="android_external_mksh" remote="los" />
@@ -13,7 +15,14 @@
   <!-- Hardware -->
   <project path="hardware/qcom/sm8150/media" name="android_hardware_qcom_sm8150_media" remote="los" />
 
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="los" clone-depth="1" />
+
   <!-- System -->
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="los" />
   <project path="system/update_engine" name="android_system_update_engine" remote="los" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="los" />
 
 </manifest>
