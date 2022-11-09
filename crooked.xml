@@ -10,9 +10,17 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
+  <!-- Github Private -->
+  <remote  name="github-priv" 
+           fetch="ssh://git@github.com/" />
+
   <!-- GitLab -->
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
+
+  <!-- GitLab  Private -->
+  <remote name="gitlab-priv" 
+          fetch="ssh://git@gitlab.com" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="bootable_recovery" remote="ca" />
@@ -58,5 +66,26 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ca" />
+
+  <!-- Pixel 3/XL Stuff -->
+  <project name="device_google_crosshatch" path="device/google/crosshatch" remote="ca" />
+  <project name="device_google_crosshatch-sepolicy" path="device/google/crosshatch-sepolicy" remote="ca" />
+<!--  <project name="vendor_google_crosshatch" path="vendor/google/crosshatch" remote="ca" /> -->
+
+  <!-- Arrow vendor for crosshatch -->
+  <project name="ArrowOS-Devices/android_vendor_google_bluecross" path="vendor/google" remote="github" revision="arrow-13.0" />
+  <!-- Arrow Gapps -->
+  <project name="arrowos-project/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="arrow-13.0" />
+
+  <project name="CrookedAndroid/device_google_crosshatch-kernel" path="device/google/crosshatch-kernel" remote="gitlab" revision="cr2" />
+
+<!--  <remove-project name="android_packages_apps_Statix_Wallpapers" remote="statix" /> -->
+  <project name="neporood/packages_apps_CrookedWalls" path="packages/apps/CrookedWalls" remote="github-priv" revision="stg/cr2" />
+
+  <remove-project name="platform/packages/apps/Camera2" />
+
+  <project name="CrookedAndroid/android_vendor_google_pixelparts" path="vendor/google/pixelparts" remote="gitlab" revision="cr2" />
+
+  <project name="ProtonAOSP/android_packages_apps_ElmyraService" path="packages/apps/ElmyraService" remote="github" revision="sc-qpr3" />
 
 </manifest>
