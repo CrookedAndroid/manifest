@@ -5,9 +5,6 @@
   <remote  name="statix"
            revision="tm"
            fetch="https://github.com/StatiXOS/" />
-
-  <!-- Device -->
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
   
   <!-- External -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />
