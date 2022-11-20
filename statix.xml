@@ -29,6 +29,5 @@
 
   <!-- Vendor -->
   <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix"/>
-  <project path="vendor/support" name="android_vendor_support" remote="statix" />
 
 </manifest>

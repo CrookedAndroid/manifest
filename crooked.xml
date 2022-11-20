@@ -58,5 +58,6 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ca" />
+  <project path="vendor/support" name="android_vendor_support" remote="ca" />
 
 </manifest>
