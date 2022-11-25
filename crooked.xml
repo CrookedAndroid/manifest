@@ -47,6 +47,7 @@
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ca" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ca" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" />
 
   <!-- System --> 
