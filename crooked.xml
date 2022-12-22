@@ -53,6 +53,9 @@
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ca" revision="cr2" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" revision="cr2" />
 
+  <!-- Prebuilts -->
+  <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="ca" />
+
   <!-- System --> 
   <project path="system/core" name="system_core" remote="ca" />
   <project path="system/libhidl" name="android_system_libhidl" remote="ca" />
