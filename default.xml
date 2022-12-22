@@ -1190,5 +1190,5 @@
   <include name="statix.xml" />
   <include name="include-caf.xml" />
   <include name="los.xml" />
-
+  <include name="pantah.xml" />
 </manifest>

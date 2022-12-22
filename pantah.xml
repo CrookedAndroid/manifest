@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- device -->
+  <project name="device_google_gs201" path="device/google/gs201" remote="ca" />
+  <project name="device_google_gs201-sepolicy" path="device/google/gs201-sepolicy" remote="ca" />
+  <project name="device_google_pantah" path="device/google/pantah" remote="ca" />
+
+</manifest>
