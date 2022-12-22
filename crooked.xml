@@ -37,6 +37,7 @@
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ca" />
 
   <!-- Hardware -->
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="ca" />
   <project path="hardware/qcom/sdm845/display" name="hardware_qcom_sdm845_display" remote="ca" revision="cr2" />
   <project path="hardware/qcom/sdm845/media" name="hardware_qcom_sdm845_media" remote="ca" revision="cr2" />
   <project path="hardware/qcom/sm8150/display" name="hardware_qcom_sm8150_display" remote="ca" revision="cr2" />
