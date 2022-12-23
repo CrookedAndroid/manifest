@@ -53,6 +53,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ca" revision="cr2" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" revision="cr2" />
+  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="ca" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="ca" />
