@@ -10,7 +10,7 @@ mkdir crooked (or whatever you want to name the source folder)
 
 cd ~/crooked
 
-repo init -u https://github.com/CrookedAndroid/manifest.git -b cr2
+repo init -u https://github.com/CrookedAndroid/manifest.git -b cr2-new
 
 Sync Source:
 
