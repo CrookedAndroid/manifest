@@ -47,12 +47,16 @@
 
   <!-- Packages -->
   <project path="packages/apps/CrookedWalls" name="packages_apps_CrookedWalls" remote="ca" revision="cr2" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ca" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ca" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ca" revision="cr2" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" revision="cr2" />
   <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="ca" />
   <project path="packages/apps/Statix/Settings" name="packages_apps_Statix_Settings" remote="ca" />
+  <project path="packages/resources/ThemedIcons" name="packages_resources_ThemedIcons" remote="ca">
+    <linkfile src="res" dest="packages/apps/Launcher3/res-icons" />
+  </project>
 
   <!-- Prebuilts -->
   <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="ca" />
