@@ -33,7 +33,7 @@
   </project>
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="frameworks_base" remote="ca" />
+  <project path="frameworks/base" name="frameworks_base" remote="ca" revision="cr3" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ca" />
 
   <!-- Hardware -->
@@ -43,17 +43,17 @@
   <project path="hardware/statix/interfaces" name="hardware_statix_interfaces" remote="ca" revision="cr2-new" />
 
   <!-- Manifest -->
-  <project path="manifest" name="manifest" remote="ca" />
+  <project path="manifest" name="manifest" remote="ca" revision="cr3" />
 
   <!-- Packages -->
   <project path="packages/apps/CrookedWalls" name="packages_apps_CrookedWalls" remote="ca" revision="cr2" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ca" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ca" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ca" revision="cr3" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ca" revision="cr2" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ca" revision="cr2" />
-  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="ca" />
-  <project path="packages/apps/Statix/Settings" name="packages_apps_Statix_Settings" remote="ca" />
+<!--  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="ca" />
+  <project path="packages/apps/Statix/Settings" name="packages_apps_Statix_Settings" remote="ca" /> -->
   <project path="packages/resources/ThemedIcons" name="packages_resources_ThemedIcons" remote="ca">
     <linkfile src="res" dest="packages/apps/Launcher3/res-icons" />
   </project>
@@ -66,10 +66,10 @@
   <project path="system/libhidl" name="android_system_libhidl" remote="ca" />
 	
   <!-- Vendor -->
-  <project path="vendor/crooked" name="vendor_crooked" remote="ca">
+  <project path="vendor/crooked" name="vendor_crooked" remote="ca" revision="cr3" >
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
-<!--  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ca" revision="cr2" /> -->
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ca" revision="cr3" /> -->
   <project path="vendor/support" name="vendor_support" remote="ca" revision="cr2" />
 
 </manifest>
