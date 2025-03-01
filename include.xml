@@ -9,6 +9,11 @@
   <remote  name="statix"
            revision="vic-qpr1"
            fetch="https://github.com/StatiXOS/" />
+		   
+  <!-- GitHub (CrookedAndroid) -->
+  <remote  name="crokked"
+           revision="cr15.1"
+           fetch="https://github.com/CrookedAndroid" />
 
   <!-- GitLab -->
   <remote name="gitlab"
@@ -44,7 +49,11 @@
     <linkfile src="build.sh" dest="build.sh" />
   </project>
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
-
+  <project path="device/google/caimito" name="device_google_caimito" remote="crooked" />
+  <project path="device/google/zumapro" name="device_google_zumapro" remote="crooked" />
+  <project path="device/google/zumapro-sepolicy" name="device_google_zumapro-sepolicy" remote="crooked" />
+  <project path="device/google/gs-common" name="device_google_gs-common" remote="crooked" />
+  
   <!-- External -->
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="statix" />
   <project path="external/mksh" name="android_external_mksh" remote="statix" />
@@ -54,7 +63,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="statix" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="statix" />
+  <project path="frameworks/base" name="crooked_frameworks_base" remote="crooked" />
   <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
 
   <!-- Google Mobile Services -->
@@ -66,6 +75,7 @@
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="statix" />
   <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="crooked" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="statix" />
@@ -82,7 +92,7 @@
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-22.1" />
   <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="statix" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="crooked" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix" />
   <project path="packages/apps/Statix/ColorStub" name="android_packages_apps_Statix_ColorStub" remote="statix" />
   <project path="packages/apps/Statix/Launcher" name="android_packages_apps_Statix_Launcher" remote="statix" />
@@ -112,7 +122,9 @@
 
   <!-- Vendor -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix">
+  <project path="vendor/crooked" name="android_vendor_crooked" remote="crooked">
+  <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="crooked">
+  
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix" />

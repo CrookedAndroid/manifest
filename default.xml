@@ -1410,7 +1410,7 @@
   </project>
   <!-- END open-source projects -->
 
-  <!-- StatiXOS -->
+  <!-- CrookedAndroid -->
   <include name="remove.xml" />
   <include name="include.xml" />
   <include name="include-caf.xml" />
