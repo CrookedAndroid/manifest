@@ -5,7 +5,7 @@ Your one-stop destination for all the documentation about building Android can b
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_manifest.git -b vic-qpr1
+repo init -u https://github.com/CrookedAndroid/manifest.git -b cr15.1
 ```
 ## Sync Source ##
 ```bash
