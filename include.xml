@@ -78,7 +78,7 @@
   <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="crooked" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+  <project path="manifest" name="manifest" remote="crooked" />
 
   <!-- NXP -->
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" remote="statix" revision="tm"/>
