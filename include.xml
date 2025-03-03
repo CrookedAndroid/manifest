@@ -122,10 +122,10 @@
 
   <!-- Vendor -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
-  <project path="vendor/crooked" name="vendor_crooked" remote="crooked">
+  <project path="vendor/crooked" name="vendor_crooked" remote="crooked" />
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="crooked">
+  <project path="vendor/google/faceunlock" name="vendor_google_faceunlock" remote="crooked" />
   <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix" />
 	  
 </manifest>
