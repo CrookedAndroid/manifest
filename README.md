@@ -5,7 +5,7 @@ Your one-stop destination for all the documentation about building Android can b
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/stx-staging/android_manifest.git -b vic-qpr2
+repo init -u https://github.com/CrookedAndroid/manifest.git -b cr15.2
 ```
 ## Sync Source ##
 ```bash
@@ -14,7 +14,8 @@ repo sync --force-sync --no-clone-bundle --current-branch --no-tags -j$(nproc --
 ## Build Time (Linux x86_64 ONLY) ##
 ```bash
 . build/envsetup.sh
-brunch statix_<DEVICE>-<RELEASE>-userdebug (or statix_<DEVICE>-<RELEASE>-user)
+lunch statix_<DEVICE>-<RELEASE>-userdebug (or statix_<DEVICE>-<RELEASE>-user)
+m -j$(nproc --all) && m updatepackage -j$(nproc --all)
 ```
 #### For projects using this manifest, `<RELEASE>` is `bp1a`.
 ### Submitting Patches ###
