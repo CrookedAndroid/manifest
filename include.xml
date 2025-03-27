@@ -126,7 +126,7 @@
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" />
 
   <!-- Vendor -->
-  <project path="vendor/support" name="vendor_support" remote="crooked">
+  <project path="vendor/support" name="vendor_support" remote="crooked" />
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
   <project path="vendor/crooked" name="vendor_crooked" remote="crooked">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
