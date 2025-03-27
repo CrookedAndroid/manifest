@@ -14,6 +14,11 @@
   <remote  name="statix-staging"
            revision="vic-qpr2"
            fetch="https://github.com/stx-staging/" />
+		   
+  <!-- GitHub (STX-Staging) -->
+  <remote  name="crooked"
+           revision="cr15.2"
+           fetch="https://github.com/CrookedAndroid/" />
 
   <!-- GitLab -->
   <remote name="gitlab"
@@ -22,6 +27,10 @@
   <!-- Gitea -->
   <remote  name="gitea"
            fetch="https://git.keksla.wtf/" />
+		   
+  <!-- Gitea -->
+  <remote  name="gitea-crooked"
+           fetch="https://gitea.com/" />
 
   <!-- ART -->
   <project path="art" name="android_art" remote="statix-staging" />
@@ -43,6 +52,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="build/release" name="build_release" remote="crooked" />
 
   <!-- Device -->
   <project path="device/manifests" name="android_device_manifests" remote="statix" revision="udc">
@@ -59,7 +69,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="statix-staging" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="statix-staging" />
+  <project path="frameworks/base" name="Michael-Slogar/crooked_frameworks_base" remote="gitea-crooked" revision="cr15.2" />
   <project path="frameworks/native" name="android_frameworks_native" remote="statix-staging" />
 
   <!-- Google Mobile Services -->
@@ -73,7 +83,7 @@
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix-staging" />
+  <project path="manifest" name="manifest" remote="crooked" />
 
   <!-- NXP -->
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" remote="statix" revision="tm"/>
@@ -87,12 +97,12 @@
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-22.1" />
   <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="statix" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix-staging" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix-staging" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="crooked" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix-staging" />
   <project path="packages/apps/Statix/ColorStub" name="android_packages_apps_Statix_ColorStub" remote="statix" />
   <project path="packages/apps/Statix/Launcher" name="android_packages_apps_Statix_Launcher" remote="statix-staging" />
-  <project path="packages/apps/Statix/Settings" name="android_packages_apps_Statix_Settings" remote="statix-staging" />
-  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="statix-staging" />
+  <project path="packages/apps/Statix/Settings" name="packages_apps_Statix_Settings" remote="crooked" />
+  <project path="packages/apps/Statix/SystemUI" name="android_packages_apps_Statix_SystemUI" remote="crooked" />
   <project path="packages/apps/Statix/Wallpapers" name="android_packages_apps_Statix_Wallpapers" remote="statix" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix-staging" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="statix-staging" />
@@ -116,9 +126,10 @@
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" />
 
   <!-- Vendor -->
+  <project path="vendor/support" name="vendor_support" remote="crooked">
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix-staging">
+  <project path="vendor/crooked" name="vendor_crooked" remote="crooked">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="vendor/statix-prebuilts" name="android_vendor_statix-prebuilts" remote="statix-staging" />
+  <project path="vendor/statix-prebuilts" name="vendor_statix-prebuilts" remote="crooked" />
 </manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- device -->
+  <project path="device/google/caimito" name="device_google_caimito" remote="crooked" />
+  <project path="device/google/gs-common" name="device_google_gs-common" remote="crooked" />
+  <project path="device/google/zumapro" name="device_google_zumapro" remote="crooked" />
+  <project path="device/google/zumapro-sepolicy" name="device_google_zumapro-sepolicy" remote="crooked" />
+  
+</manifest>  
+  
