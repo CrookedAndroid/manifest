@@ -1063,9 +1063,9 @@
   <!-- END open-source projects -->
 
   <!-- StatiXOS -->
-  <include name="caimito.xml" />
   <include name="remove.xml" />
   <include name="include.xml" />
   <include name="include-caf.xml" />
+  <include name="caimito.xml" />
 
 </manifest>
