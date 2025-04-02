@@ -15,7 +15,7 @@
            revision="vic-qpr2"
            fetch="https://github.com/stx-staging/" />
 		   
-  <!-- GitHub (STX-Staging) -->
+  <!-- GitHub (Crooked Android) -->
   <remote  name="crooked"
            revision="cr15.2"
            fetch="https://github.com/CrookedAndroid/" />
@@ -39,7 +39,7 @@
   <project path="bionic" name="android_bionic" remote="statix-staging" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="statix-staging" groups="pdk" >
+  <project path="build/make" name="build_make" remote="crooked" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
